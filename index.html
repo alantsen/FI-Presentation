@@ -24,30 +24,307 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					
-					Leaving Corporate Behind
-					
+				<section data-markdown>
+					#Leaving Corporate Behind
+					Moving From Employee To Founder
 				</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					##My (Corporate) story
+					- I'm a recovering tax lawyer
+					- Did Comm/Law at Uni
+					- Worked in international tax for a Big 4
+					- Left after 4 years to build something I love
+					- Never looked back
+				</section>
+				<section data-markdown>
+					##Before Being An Advisor
+					- Started a small tutoring business
+					- That grew (and grew and grew...)
+					- 
+					</section>
+				
+				
+				
+				<section data-markdown>
+					##Important Caveats
+					##### I'm still learning
+				</section>
+				<section>
+				<h4>How Much People Care</h4>
+						<iframe style="overflow:hidden;margin : auto 10px auto auto;" class="stretch" scrolling="no" id="chart-frame-5" data-chart></iframe>
+						<small>Answer: Not very much</small>
+				</section>
+				
+				<section data-markdown>
+					## What is the difference between being an employee versus being a founder?
+				</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
+			var items = [
+			{
+				selector : "#chart-frame-0",
+				type : "doughnut",
+				data : [
+					{
+						value: 300,
+						color:"#F7464A",
+						highlight: "#FF5A5E",
+						label: "Red"
+					},
+					{
+						value: 50,
+						color: "#46BFBD",
+						highlight: "#5AD3D1",
+						label: "Green"
+					},
+					{
+						value: 100,
+						color: "#FDB45C",
+						highlight: "#FFC870",
+						label: "Yellow"
+					}
+				],
+				options : {
+					responsive:true
+				}
+			},
+			{
+				selector : "#chart-frame-1",
+				type : "line",
+				data : {
+    			labels: ["January", "February", "March", "April", "May", "June", "July"],
+    			datasets: [
+        		{
+            	label: "My First dataset",
+            	fillColor: "rgba(220,220,220,0.2)",
+            	strokeColor: "rgba(220,220,220,1)",
+            	pointColor: "rgba(220,220,220,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(220,220,220,1)",
+            	data: [65, 59, 80, 81, 56, 55, 40]
+        		},
+        		{
+            	label: "My Second dataset",
+            	fillColor: "rgba(151,187,205,0.2)",
+            	strokeColor: "rgba(151,187,205,1)",
+            	pointColor: "rgba(151,187,205,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(151,187,205,1)",
+            	data: [28, 48, 40, 19, 86, 27, 90]
+        		}
+    			]
+				},
+				options : {
+					responsive:true
+				}
+			},
+			{
+        selector : "#chart-frame-2",
+        type : "bar",
+        data : {
+          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          datasets: [
+            {
+              label: "My First dataset",
+              fillColor: "rgba(220,220,220,0.5)",
+              strokeColor: "rgba(220,220,220,0.8)",
+              highlightFill: "rgba(220,220,220,0.75)",
+              highlightStroke: "rgba(220,220,220,1)",
+              data: [65, 59, 80, 81, 56, 55, 40]
+            },
+            {
+              label: "My Second dataset",
+              fillColor: "rgba(151,187,205,0.5)",
+              strokeColor: "rgba(151,187,205,0.8)",
+              highlightFill: "rgba(151,187,205,0.75)",
+              highlightStroke: "rgba(151,187,205,1)",
+              data: [28, 48, 40, 19, 86, 27, 90]
+            }
+          ]
+        },
+				options : {
+					responsive : true
+				}
+      },
+			{
+				selector : "#chart-frame-3",
+        type : "radar",
+				data : {
+    			labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+    			datasets: [
+        		{
+            	label: "My First dataset",
+            	fillColor: "rgba(220,220,220,0.2)",
+            	strokeColor: "rgba(220,220,220,1)",
+            	pointColor: "rgba(220,220,220,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(220,220,220,1)",
+            	data: [65, 59, 90, 81, 56, 55, 40]
+        		},
+        		{
+            	label: "My Second dataset",
+            	fillColor: "rgba(151,187,205,0.2)",
+            	strokeColor: "rgba(151,187,205,1)",
+            	pointColor: "rgba(151,187,205,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(151,187,205,1)",
+            	data: [28, 48, 40, 19, 96, 27, 100]
+        		}
+    			]
+				},
+				options :{
+					responsive : true,
+					pointLabelFontSize : 15
+				}
+			},
+			{
+        selector : "#chart-frame-4",
+        type : "polararea",
+        data : [
+          {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+          },
+          {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+          },
+          {
+            value: 40,
+            color: "#949FB1",
+            highlight: "#A8B3C5",
+            label: "Grey"
+          },
+          {
+            value: 120,
+            color: "#4D5360",
+            highlight: "#616774",
+            label: "Dark Grey"
+          }
+        ],
+        options : {
+          responsive : true
+        }
+      },
+      {
+        selector : "#chart-frame-5",
+        type : "pie",
+        data : [
+          {
+            value: 95,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Don't Give A F**CK"
+          },
+          {
+            value: 0,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 5,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Give A F**CK"
+          }
+        ],
+				options : {
+					responsive : true
+				}
+      },
+			{
+        selector : "#chart-frame-6",
+        type : "doughnut",
+        data : [
+          {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+          },
+          {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+          }
+        ],
+				options : {
+					responsive : true
+				}
+      }
+    ];
+			
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+				
 				history: true,
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// Display the page number of the current slide
+				slideNumber: true,
+
+				// Enable keyboard shortcuts for navigation
+				keyboard: true,
+
+				// Enable the slide overview mode
+				overview: true,
+
+				// Vertical centering of slides
+				center: true,
+
+				// Transition style
+				transition: 'convex', // none/fade/slide/convex/concave/zoo
+
+				// Parallax background image
+				parallaxBackgroundImage: 'https://f001.backblaze.com/file/ImagesDecks/paper_Balls2.png',
+
+				// Parallax background size
+				//parallaxBackgroundSize: '2000px 900px', // CSS syntax, e.g. "2100px 900px"
+				
+				chart : {
+					items : items
+				},
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
+					{ src: 'plugin/chartjs/Chart.min.js'},
+					{ src: 'plugin/chartjs/charted.js'}, // This is the plugin
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
+	
 			});
 		</script>
 	</body>
